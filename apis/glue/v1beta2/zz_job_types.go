@@ -15,7 +15,7 @@ import (
 
 type CommandInitParameters struct {
 
-	// –  The name you assign to this job. It must be unique in your account.
+	// –  The name of the job command. For an Apache Spark ETL job, this must be glueetl. For a Python shell job, it must be pythonshell. For an Apache Spark streaming ETL job, this must be gluestreaming. For a Ray job, this must be glueray.
 	Name *string `json:"name,omitempty" tf:"name,omitempty"`
 
 	// The Python version being used to execute a Python shell job. Allowed values are 2, 3 or 3.9. Version 3 refers to Python 3.6.
@@ -30,7 +30,7 @@ type CommandInitParameters struct {
 
 type CommandObservation struct {
 
-	// –  The name you assign to this job. It must be unique in your account.
+	// –  The name of the job command. For an Apache Spark ETL job, this must be glueetl. For a Python shell job, it must be pythonshell. For an Apache Spark streaming ETL job, this must be gluestreaming. For a Ray job, this must be glueray.
 	Name *string `json:"name,omitempty" tf:"name,omitempty"`
 
 	// The Python version being used to execute a Python shell job. Allowed values are 2, 3 or 3.9. Version 3 refers to Python 3.6.
@@ -45,7 +45,7 @@ type CommandObservation struct {
 
 type CommandParameters struct {
 
-	// –  The name you assign to this job. It must be unique in your account.
+	// –  The name of the job command. For an Apache Spark ETL job, this must be glueetl. For a Python shell job, it must be pythonshell. For an Apache Spark streaming ETL job, this must be gluestreaming. For a Ray job, this must be glueray.
 	// +kubebuilder:validation:Optional
 	Name *string `json:"name,omitempty" tf:"name,omitempty"`
 
